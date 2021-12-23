@@ -119,7 +119,7 @@ h6 {
     position: absolute;
     width: 100%;
     height: 2px;
-    bottom: -6px;
+    bottom: -31px;
     left: 0;
     background-color: #00A542;
     visibility: hidden;
@@ -160,8 +160,8 @@ h6 {
 .navbar .tech ul {
     visibility: hidden;
     opacity: 0;
-    transform: translateX(-45%);
-    width: calc(100% + 1056px);
+    transform: translateX(-50%);
+    width: calc(100% + 1048px);
 }
 
 .dropdown-content {
@@ -223,7 +223,7 @@ h6 {
 
 .navbar .dropdown:hover>ul {
     opacity: 1;
-    top: 100%;
+    top: 124%;
     visibility: visible;
 }
 
@@ -296,6 +296,8 @@ h6 {
     background-color: #fff;
     overflow-y: auto;
     transition: 0.3s;
+    border-radius: 1rem;
+    width: 95%;
 }
 
 .navbar-mobile>ul>li {
@@ -1841,11 +1843,13 @@ p.small {
     }
     .dropdown-content {
         width: auto;
+        padding: 2rem;
     }
     .navbar .dropdown ul {
         left: 0;
         transform: inherit;
-        margin: 10px;
+        margin: auto;
+        width: 90%;
     }
     .navbar .dropdown ul li a:hover {
         color: #00A542;
@@ -1861,6 +1865,21 @@ p.small {
     .navbar .btn-get-started:hover {
         width: fit-content;
         display: block;
+    }
+    .dropdown {
+        overflow-x: hidden;
+    }
+    .dropdown-content li:last-child {
+        margin: 0rem;
+    }
+    .navbar-mobile .dropdown ul a {
+        padding: 10px 0px;
+    }
+    .col-md-8 .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
     .right img {
         display: none;
