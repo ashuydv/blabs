@@ -67,7 +67,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-    background: rgba(0, 0, 0, 0.9);
+    background: #003030;
     padding: 0px 0;
 }
 
@@ -165,7 +165,7 @@ h6 {
 }
 
 .dropdown-content {
-    padding: 2rem;
+    padding: .25rem 2rem;
     margin: auto;
     width: calc(100%);
 }
@@ -176,8 +176,21 @@ h6 {
     justify-content: space-between;
 }
 
-.dropdown-content .dd-content .col-md-4 {
-    margin: 1rem 0;
+.dd-title {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid #707070;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem !important;
+}
+
+.heading h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.dropdown-content .dd-content .col-md-8 .col {
+    margin: .5rem 0;
 }
 
 .dropdown-content h1,
@@ -187,6 +200,24 @@ h6 {
 .dropdown-content h5,
 .dropdown-content h6 {
     margin-bottom: 0rem;
+}
+
+.dropdown-content .dd-content .col-md-4 .col {
+    background: #f0f0f1;
+    margin: 0 0.7rem;
+    margin-top: -1rem;
+    padding: 1rem;
+}
+
+.dropdown-content .dd-content .col-md-4 .col .btn-get-started {
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.dropdown-content .dd-content .col-md-4 .col p {
+    color: #00A542;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .dropdown-content .col-md-5 {
@@ -203,12 +234,11 @@ h6 {
 }
 
 .navbar .dropdown ul a {
-    padding: 10px 5px;
-    margin: 2px 0;
+    padding: 7px 5px;
     font-size: 14px;
     text-transform: none;
-    color: #493c3e;
-    width: 145px;
+    color: #000000;
+    width: 100%;
 }
 
 .navbar .dropdown ul a i {
@@ -1708,15 +1738,13 @@ p.small {
 #footer {
     color: #444444;
     font-size: 14px;
-    background: #fff;
+    background: #ebebeb;
     padding: 30px 0;
-    padding-top: 10px;
 }
 
 #footer .footer-top {
     padding: 30px 0 30px 0;
     padding-top: 10px;
-    background: #fff;
 }
 
 #footer h2 {
