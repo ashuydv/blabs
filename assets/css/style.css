@@ -1753,6 +1753,8 @@ p.small {
     font-size: 1rem;
 }
 
+.testimonials-1 {}
+
 .testimonials-1 .slick-list {
     overflow: inherit !important;
 }
@@ -1861,6 +1863,10 @@ p.small {
     margin: 1rem;
 }
 
+.contact0 .left .desc:nth-child(1) {
+    margin-right: 1rem;
+}
+
 .contactus form {
     background: #fff;
     color: #000;
@@ -1870,12 +1876,13 @@ p.small {
     box-shadow: 0px 3px 25px #00000029;
     text-align: left;
     position: absolute;
-    top: -10%;
+    top: -8.5%;
     right: 5%;
 }
 
 .contactus form h3 {
     font-size: 22px;
+    margin-top: 0px !important;
 }
 
 .contactus .form-group {
@@ -1883,14 +1890,6 @@ p.small {
     display: flex;
     align-items: baseline;
     flex-direction: column;
-}
-
-.file-upload {
-    border: 1px solid black;
-    padding: 6px;
-    border-radius: 5px;
-    width: 100%;
-    text-align: center;
 }
 
 .contactus .btn {
@@ -1911,6 +1910,7 @@ p.small {
 
 .medias {
     margin: 1rem;
+    width: 50%;
 }
 
 .medias a {
@@ -1926,7 +1926,8 @@ p.small {
 
 .fa-linkedin-in,
 .fa-facebook-f,
-.fa-twitter {
+.fa-twitter,
+.fa-calendar {
     border: 1px solid;
     padding: .5rem;
     border-radius: 50%;
@@ -1942,11 +1943,13 @@ p.small {
 
 .form-group label {
     font-size: 14px;
+    width: 100%;
 }
 
 .fa-linkedin-in::before,
 .fa-facebook-f::before,
-.fa-twitter::before {
+.fa-twitter::before,
+.fa-calendar::before {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -2602,13 +2605,13 @@ nav input {
 .slick-next {
     top: -25% !important;
     background: #fff !important;
-    right: 5% !important;
+    right: 10% !important;
     border-radius: 50%;
     font-size: 1rem;
 }
 
 .slick-prev {
-    right: 14% !important;
+    right: 16% !important;
     left: auto !important;
 }
 
@@ -2626,4 +2629,41 @@ nav input {
     color: black !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.form-group .file-upload-wrapper {
+    width: 100%;
+}
+
+.file-upload::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.file-upload {
+    width: 100%;
+}
+
+.file-upload::before {
+    content: 'Select or Drop your file here';
+    text-align: center;
+    display: inline-block;
+    background: linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #BEBDBD;
+    border-radius: 3px;
+    padding: .375rem .75rem;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-size: 14px;
+    width: 100%;
+}
+
+.file-upload:hover::before {
+    border-color: black;
+}
+
+.file-upload:active::before {
+    background: -webkit-linear-gradient(top, transparent, transparent);
 }
