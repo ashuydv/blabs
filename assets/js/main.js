@@ -137,6 +137,16 @@
 
     });
 
+    let heroCarouselIndicators = select("#hero-carousel-indicators")
+    let heroCarouselItems = select('#heroCarousel .carousel-item', true)
+
+    heroCarouselItems.forEach((item, index) => {
+        (index === 0) ?
+        heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "' class='active'></li>":
+            heroCarouselIndicators.innerHTML += "<li data-bs-target='#heroCarousel' data-bs-slide-to='" + index + "'></li>"
+    });
+
+
     const portfolioLightbox = GLightbox({
         selector: '.portfolio-lightbox'
     });
@@ -166,6 +176,38 @@
     $('.counter').counterUp();
 
     $('.slider').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        autoplay: true,
+        slidesToScroll: 1,
+        arrows: true,
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    $('.testimonials-1').slick({
         infinite: true,
         speed: 300,
         slidesToShow: 3,
