@@ -624,7 +624,7 @@ h6 {
 #hero .buttons {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 320px;
     margin: auto;
 }
@@ -886,7 +886,7 @@ p {
 .shape-inner h4 {
     text-transform: uppercase;
     margin: 5px 0;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: bold;
 }
 
