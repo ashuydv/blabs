@@ -2797,6 +2797,19 @@ nav input {
         width: 100%;
         margin: 2px auto;
     }
+    .connections {
+        background: #111;
+        color: #fff;
+        height: 300px;
+    }
+    .connections .col-md-2 {
+        position: relative;
+    }
+    .connections .col-md-2 .btn-get-started {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .calendar {
@@ -2806,4 +2819,13 @@ nav input {
 
 .medias .row .col-md-6 {
     margin: 1rem auto;
+}
+
+.csr {
+    color: #fff !important;
+    margin: 1rem 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
