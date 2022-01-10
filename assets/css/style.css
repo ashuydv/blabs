@@ -149,25 +149,26 @@ h6 {
     margin: 0.75rem 0;
     padding: 25px 0;
     z-index: 99;
+    left: 50%;
     opacity: 0;
     visibility: hidden;
     background: #fff;
     box-shadow: 0px 0px 30px rgb(127 137 161 / 25%);
     transition: 0.3s;
-    width: calc(100% + 1056px);
+    width: calc(100% + 1200px);
 }
 
 .navbar .tech ul {
     visibility: hidden;
     opacity: 0;
     transform: translateX(-50%);
-    width: calc(100% + 1048px);
+    width: calc(100% + 1200px);
 }
 
 .dropdown-content {
-    padding: .25rem 2rem;
+    padding: 0.25rem 2rem;
     margin: auto;
-    width: calc(100%);
+    width: calc(88%);
 }
 
 .dropdown-content .dd-content {
@@ -669,15 +670,13 @@ li .btn-get-started:hover,
 
 #hero .btn-get-started {
     font-family: "Poppins", sans-serif;
-    text-transform: uppercase;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 17px;
     letter-spacing: 1px;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 24px;
     border-radius: 50px;
     transition: 0.5s;
-    font-weight: 600;
 }
 
 #hero .btn-get-started:nth-child(1) {
@@ -736,7 +735,7 @@ li .btn-get-started:hover,
 }
 
 section {
-    padding: 60px 0;
+    padding: 30px 0;
     overflow: hidden;
 }
 
@@ -808,7 +807,7 @@ p {
 }
 
 .services {
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 }
 
 .services .section-title {
@@ -949,12 +948,12 @@ p.small {
 
 .stats {
     background: url(../img/contactu.png);
-    height: 100vh;
+    height: 85vh;
     background-size: cover;
     background-position: center;
     color: white;
     text-align: center;
-    padding: 80px 60px;
+    padding: 60px 60px;
 }
 
 .stat-1 {
