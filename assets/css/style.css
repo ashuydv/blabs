@@ -559,7 +559,31 @@ h6 {
         height: 100vh;
     }
     #hero .carousel-container {
-        top: 8px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    #hero .carousel-container p {
+        font-size: 1rem;
+        line-height: normal;
+    }
+    #hero .buttons {
+        width: auto !important;
+    }
+    .carousel-control-next {
+        right: 5%;
+        opacity: 1;
+    }
+    .carousel-control-prev {
+        right: 25%;
+        opacity: 1;
+    }
+    #hero .carousel-control-next-icon,
+    #hero .carousel-control-prev-icon {
+        font-size: 15px;
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -750,6 +774,13 @@ p {
     line-height: 35px;
 }
 
+@media screen and (max-width: 1000px) {
+    p {
+        font-size: 1rem;
+        line-height: inherit;
+    }
+}
+
 .service .col {
     padding: 0rem;
     margin: 0rem;
@@ -863,6 +894,21 @@ p {
     font-size: 12px;
     line-height: normal;
     margin: 20px 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .shape-inner {
+        top: 55%;
+    }
+    .shape-inner p {
+        font-size: 12px;
+        line-height: normal;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    .shape-inner h4 {
+        font-size: 1rem;
+    }
 }
 
 .trapezoid {
@@ -1070,6 +1116,18 @@ p.small {
     border-left: 1px solid white;
     justify-content: center;
     font-size: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .connections .col-md-6 {
+        padding-left: 1rem;
+        border-left: 0px solid #000;
+        font-size: 1rem;
+    }
+    .connections .btn-get-started {
+        margin-left: 0rem;
+        margin-top: 1rem;
+    }
 }
 
 
@@ -1698,6 +1756,15 @@ p.small {
     left: 0;
 }
 
+@media screen and (max-width: 1000px) {
+    .news .col-md-4 {
+        border: 1px solid #493c3e;
+    }
+    .news .col-md-4 h4 {
+        height: auto;
+    }
+}
+
 .card-side.back {
     transform: rotateY(-180deg);
     background: #fff;
@@ -1764,8 +1831,6 @@ p.small {
     color: white;
     font-size: 1rem;
 }
-
-.testimonials-1 {}
 
 .testimonials-1 .slick-list {
     overflow: inherit !important;
@@ -1951,6 +2016,31 @@ p.small {
     height: 40px;
     position: relative;
     margin-right: 6px;
+}
+
+@media screen and (max-width: 1000px) {
+    .medias {
+        width: 100%;
+    }
+    .medias .col {
+        display: flex;
+        align-items: center;
+        padding: 0rem;
+        margin-bottom: 1rem;
+    }
+    .medias .row p {
+        text-align: left;
+        width: 100%;
+        display: block;
+    }
+    .medias img {
+        margin-right: 6px;
+        width: 60px;
+        height: 60px;
+    }
+    .contactus {
+        padding-bottom: 10px;
+    }
 }
 
 .form-group .row {
@@ -2176,22 +2266,21 @@ p.small {
     .right img {
         display: none;
     }
-    .inner {
-        margin: auto;
+    .service .container .row {
+        display: flex;
+        flex-direction: column;
     }
     .shape-outer {
         display: flex;
         flex-shrink: 0;
-        height: calc(300px + 3vw);
-        width: calc(300px + 3vw);
         margin: 1rem auto;
         background: white;
         position: relative;
         transition: .3s;
+        width: calc(270px);
+        height: calc(270px);
     }
     .shape-inner {
-        width: calc(280px + 3vw);
-        height: calc(280px + 3vw);
         padding: 2rem .5rem;
     }
     .stats {
@@ -2682,4 +2771,39 @@ nav input {
 
 .file-upload:active::before {
     background: -webkit-linear-gradient(top, transparent, transparent);
+}
+
+@media screen and (max-width: 1000px) {
+    .testimonial-1 {
+        background: #1A5858;
+        padding: 1rem;
+        padding-bottom: 4rem;
+        height: auto;
+        border-radius: 54px 0;
+        text-align: left;
+        margin: 7px;
+        position: relative;
+        color: white;
+        font-size: 1rem;
+    }
+    .medias .row .col div {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: left;
+    }
+    .form-group .col-md-6 input {
+        width: 100%;
+        margin: 2px auto;
+    }
+}
+
+.calendar {
+    width: 91px;
+    height: 91px;
+}
+
+.medias .row .col-md-6 {
+    margin: 1rem auto;
 }
