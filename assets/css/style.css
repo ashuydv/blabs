@@ -2810,6 +2810,18 @@ nav input {
         left: 50%;
         transform: translateX(-50%);
     }
+    .business-hrs {
+        width: 100% !important;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+    .business-hrs h4,
+    .business-hrs p {
+        margin: 0rem;
+        padding: 0rem;
+    }
 }
 
 .calendar {
