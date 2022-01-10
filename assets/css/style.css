@@ -1,5 +1,5 @@
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #444444;
 }
 
@@ -19,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Nunito", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .back-to-top {
@@ -217,7 +217,7 @@ h6 {
 
 .dropdown-content .dd-content .col-md-4 .col p {
     color: #00A542;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .dropdown-content .col-md-5 {
