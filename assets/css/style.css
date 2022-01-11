@@ -748,7 +748,7 @@ section {
 }
 
 .section-title h2 {
-    font-size: 1.12rem;
+    font-size: 24px;
     letter-spacing: 1px;
     font-weight: 700;
     padding: 8px 0px;
@@ -770,7 +770,7 @@ section {
 p {
     margin: 15px auto 0 auto;
     font-weight: 500;
-    line-height: 35px;
+    line-height: 24px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -792,9 +792,18 @@ p {
     }
 }
 
+.about {
+    padding: 3.5rem 0;
+}
+
 .about .content h3 {
     font-weight: 600;
     font-size: 26px;
+}
+
+.about .section-title h2 {
+    text-transform: capitalize;
+    font-weight: normal;
 }
 
 .about .right {
@@ -807,7 +816,12 @@ p {
 }
 
 .services {
+    padding-top: 3.2rem;
     padding-bottom: 60px;
+    background: url(../images/Polygon\ 1.png) no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    background-attachment: fixed;
 }
 
 .services .section-title {
@@ -816,6 +830,10 @@ p {
     justify-content: center;
     text-align: center;
     flex-direction: column;
+}
+
+.services .section-title h2 {
+    color: #000;
 }
 
 .box {
@@ -861,8 +879,8 @@ p {
 }
 
 .icons {
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
     margin-bottom: .5rem;
     fill: #00A542;
     transition: .3s;
@@ -873,7 +891,7 @@ p {
     margin: auto;
     border-radius: 1rem;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -885,14 +903,15 @@ p {
 .shape-inner h4 {
     text-transform: uppercase;
     margin: 5px 0;
-    font-size: 1rem;
+    font-size: 17px;
     font-weight: bold;
 }
 
 .shape-inner p {
     font-size: 12px;
     line-height: normal;
-    margin: 20px 0;
+    margin: 8px 0;
+    height: 60px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -956,6 +975,10 @@ p.small {
     padding: 60px 60px;
 }
 
+.stats .section-title h2 {
+    color: white;
+}
+
 .stat-1 {
     display: flex;
     align-items: center;
@@ -968,6 +991,11 @@ p.small {
     display: flex;
     line-height: 45px;
     color: #00A542;
+    font-size: 28px;
+}
+
+.stat-1 h5 {
+    font-size: 17px;
 }
 
 .stats .btn-get-started {
@@ -996,6 +1024,7 @@ p.small {
 
 #tabs {
     color: #111;
+    padding-bottom: 2.2rem;
 }
 
 #tabs .section-title {
@@ -1028,6 +1057,7 @@ p.small {
     align-items: center;
     justify-content: space-evenly;
     margin: 2rem 0;
+    margin-bottom: 0px;
     flex-wrap: wrap;
     width: 100%;
 }
@@ -1097,6 +1127,16 @@ p.small {
 .connections {
     background: #111;
     color: #fff;
+}
+
+.connections .section-title h2 {
+    font-size: 17px;
+    color: white;
+    font-weight: normal;
+}
+
+.connections .btn-get-started {
+    margin-left: 2rem;
 }
 
 .connections .row {
@@ -1687,6 +1727,8 @@ p.small {
     background: url(../images/pattern-5.png) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
+    padding-bottom: 62px;
+    padding-top: 42px;
 }
 
 .news .section-title {
@@ -1694,18 +1736,34 @@ p.small {
     text-align: center;
 }
 
+.news .section-title h3 {
+    font-size: 17px;
+    color: #00A542;
+}
+
+.section-title h3 {
+    font-size: 17px;
+    color: #00A542;
+}
+
+.news .section-title h2 {
+    color: #000;
+}
+
 .news .row {
     box-shadow: 0px 3px 55px rgba(0, 0, 0, 0.1);
 }
 
 .news .col-md-4 h4 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     height: 50px;
+    margin: 10px 0;
 }
 
 .news .col-md-4 p {
     line-height: normal;
+    margin: 10px 0;
 }
 
 .news .col-md-3,
@@ -1796,7 +1854,7 @@ p.small {
 
 .testimonials {
     background: url(../images/testimonial.png);
-    height: 120vh;
+    height: 106vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1810,8 +1868,11 @@ p.small {
     justify-content: space-between;
 }
 
-.testimonials .section-title {
+.testimonials .section-title,
+.testimonials .section-title h2,
+.testimonials .section-title h3 {
     text-align: center;
+    color: #fff;
 }
 
 .testimonials .col-md-4 {
@@ -1859,8 +1920,8 @@ p.small {
 }
 
 .client {
-    padding: 4rem;
-    padding-bottom: 2rem;
+    padding: 2.25rem;
+    padding-bottom: 0rem;
     text-align: center;
 }
 
@@ -1891,6 +1952,11 @@ p.small {
     transform: translate(-50%, -50%);
 }
 
+.client .section-title h2 {
+    color: #000 !important;
+    font-size: 20px;
+}
+
 
 /*--------------------------------------------------------------
 # Contact
@@ -1904,7 +1970,7 @@ p.small {
 .contact0 {
     background: url(../images/contactus.png);
     background-size: cover;
-    height: 118vh;
+    height: 115vh;
     color: #fff;
     padding: 1rem 2rem;
     position: relative;
@@ -1947,6 +2013,10 @@ p.small {
     margin-right: 1rem;
 }
 
+.contactus .section-title h2 {
+    color: black;
+}
+
 .contactus form {
     background: #fff;
     color: #000;
@@ -1963,6 +2033,7 @@ p.small {
 .contactus form h3 {
     font-size: 22px;
     margin-top: 0px !important;
+    color: #000;
 }
 
 .contactus .form-group {
@@ -2839,4 +2910,103 @@ nav input {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    #hero h2 {
+        font-size: 32px;
+        line-height: normal;
+        margin-bottom: 1rem;
+    }
+    .about {
+        padding: 20px 0 !important;
+    }
+    .spectrum {
+        padding: 2rem 0;
+    }
+    .spect-services {
+        padding: 20px 0;
+    }
+    .section-title h2 {
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    .section-title {
+        padding-bottom: 0px;
+    }
+    .section-title h2 {
+        color: #00A542;
+        font-size: 20px;
+    }
+    .section-title h3 {
+        font-size: 1rem;
+        margin: 1px 0;
+    }
+    .about h3 {
+        color: #00A542;
+        font-weight: normal;
+    }
+    .about .section-title h2 {
+        color: #000;
+        font-weight: bold;
+    }
+    br {
+        display: none;
+    }
+    .shape-outer {
+        display: flex;
+        flex-shrink: 0;
+        margin: 1rem auto;
+        background: white;
+        position: relative;
+        transition: .3s;
+        width: calc(320px);
+        height: calc(320px);
+    }
+    .shape-inner {
+        top: 65%;
+        padding: 2rem !important;
+        width: calc(320px);
+        height: calc(320px);
+    }
+    .icons {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 0.5rem;
+        fill: #00A542;
+        transition: .3s;
+    }
+    .shape-inner h4 {
+        font-size: 20px;
+    }
+    .shape-inner p {
+        font-size: 15px;
+    }
+    .stat-1 .section-title h3 {
+        color: #00A542 !important;
+        font-size: 25px;
+    }
+    .connections {
+        background: #111;
+        color: #fff;
+        height: 270px;
+    }
+    .connections .section-title h2 {
+        margin-bottom: 1rem;
+    }
+    .connections .section-title h3 {
+        margin-bottom: 14px;
+    }
+    .connections .col-md-6 {
+        padding: 0px 10px;
+    }
+    .contactus .section-title h2 {
+        color: black;
+        padding-bottom: 1rem;
+    }
+    .contact0 {
+        padding: 0rem;
+        padding-bottom: 2rem;
+    }
 }
