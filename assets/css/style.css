@@ -3023,6 +3023,31 @@ nav input {
     }
 }
 
+@media (min-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 50% !important;
+    }
+    .shape-inner {
+        top: 59%;
+    }
+    .stat-1 img {
+        width: 70px;
+        height: 70px;
+    }
+    .connections .col-md-2 .btn-get-started {
+        left: 0;
+        transform: none;
+        width: 150px;
+        font-size: 1rem;
+        margin-left: -2rem;
+        margin-top: -1rem;
+    }
+    .connections {
+        height: auto;
+    }
+}
+
 @media screen and (min-width: 1000px) {
     .navbar .dropdown ul {
         width: calc(100% + 1000px);
