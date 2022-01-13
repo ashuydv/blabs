@@ -2095,6 +2095,7 @@ p.small {
     .medias .col {
         display: flex;
         align-items: center;
+        justify-content: center;
         padding: 0rem;
         margin-bottom: 1rem;
     }
@@ -2699,34 +2700,7 @@ p.small {
     }
 }
 
-@media (min-width: 320px) {
-    .shape-outer {
-        width: calc(100% + 320px);
-    }
-}
-
-@media (min-width: 375px) {
-    .shape-outer {
-        width: calc(100% + 330px);
-        height: calc(330px);
-    }
-}
-
-@media (min-width: 420px) {
-    .shape-outer {
-        width: calc(100% + 380px);
-        height: calc(380px);
-    }
-    .shape-inner {
-        width: calc(100%);
-        height: calc(380px);
-    }
-    .shape-inner p {
-        margin-bottom: 2rem;
-    }
-}
-
-@media (min-width: 768px) {
+@media (max-width: 800px) {
     .col-md-6 {
         flex: 0 0 auto;
         width: 50% !important;
@@ -2790,9 +2764,94 @@ p.small {
     .clients .row .col img {
         width: 42%;
     }
+    .contact0 .left .desc {
+        flex-direction: row;
+    }
+    .contact0 .left .desc .business-hrs {
+        display: block;
+        padding: 1rem;
+    }
+    .contactus form {
+        padding: 3rem 2rem;
+    }
 }
 
-@media screen and (min-width: 1000px) {
+@media (max-width: 480px) {
+    .shape-outer {
+        width: calc(100% + 380px);
+        height: calc(380px);
+    }
+    .shape-inner {
+        width: calc(100%);
+        height: calc(320px);
+    }
+    .shape-inner p {
+        margin-bottom: 2rem;
+    }
+    .service .container .row {
+        flex-direction: column;
+    }
+    .connections {
+        height: auto;
+        padding: 1rem;
+    }
+    .connections .col-md-6 {
+        width: 100% !important;
+    }
+    .connections .col-md-2 {
+        display: flex;
+    }
+    .connections .col-md-2 .btn-get-started {
+        position: inherit;
+        transform: none;
+        margin: 1rem auto;
+    }
+    .news .col-md-4 {
+        width: auto;
+    }
+    .footer-bottom .col-md-4 img {
+        width: 50%;
+    }
+    .footer-bottom .col-md-4 p {
+        margin-bottom: 1rem;
+    }
+    .footer-bottom p {
+        font-size: 12px;
+    }
+    #footer .footer-top .row {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #footer .footer-top .row .col {
+        margin: 1rem 0;
+    }
+    .contact0 .col-md-6 {
+        width: 100% !important;
+    }
+    .team .col-md-6 {
+        width: auto !important;
+    }
+    .carousel-control-prev {
+        right: 15%;
+    }
+}
+
+@media (max-width: 380px) {
+    .shape-outer {
+        width: calc(100% + 330px);
+        height: calc(330px);
+    }
+}
+
+@media (max-width: 320px) {
+    .shape-outer {
+        width: calc(100% + 280px);
+    }
+}
+
+
+/* @media screen and (min-width: 1000px) {
     .navbar .dropdown ul {
         width: calc(100% + 1000px);
         transform: translateX(-32%);
@@ -2832,6 +2891,78 @@ p.small {
     }
     .about .left {
         width: 50% !important;
+    }
+    .techno {
+        width: 105px;
+    }
+} */
+
+@media screen and (min-width: 1000px) {
+    .navbar .dropdown ul {
+        width: calc(100% + 1000px);
+        transform: translateX(-31%);
+    }
+    .navbar .tech ul {
+        transform: translateX(-42%);
+    }
+    .dropdown-content h4,
+    .dd-title {
+        font-size: 1rem;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    #hero p {
+        color: #eee;
+        margin-bottom: 40px;
+        font-size: 24px;
+        line-height: normal;
+    }
+    .carousel-control-prev {
+        right: 8%;
+    }
+    .carousel-control-next {
+        right: 4%;
+    }
+    .about .section-title h3 {
+        font-weight: normal;
+    }
+    .about .section-title h2 {
+        color: #000;
+        font-weight: bold;
+    }
+    .shape-outer {
+        width: calc(200px + 3vw);
+    }
+    .shape-inner p {
+        font-size: 14px;
+    }
+    .stats {
+        height: auto;
+        padding: 40px 0;
+    }
+    .stat-1 h3 {
+        font-size: 28px;
+    }
+    .connections .section-title h2 {
+        font-size: 1rem;
+    }
+    .connections .section-title h3 {
+        font-size: 24px;
+        color: #fff !important;
+    }
+    .news .col-md-4 h4 {
+        font-size: 26px;
+        height: 60px;
+    }
+    .testimonials {
+        height: calc(89vh + 20px);
+    }
+    .contact0 {
+        height: calc(100vh + 60px);
     }
 }
 
@@ -2894,6 +3025,10 @@ p.small {
     }
     .contact0 {
         height: calc(100vh + 60px);
+    }
+    .shape-outer {
+        width: calc(200px + 7vw);
+        height: calc(200px + 7vw);
     }
 }
 
